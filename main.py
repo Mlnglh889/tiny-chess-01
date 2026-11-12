@@ -23,4 +23,4 @@ while 1:
  if g['status']=='done':break
  while g['status']=='your_move':g=p('/move',{'game':g['game'],'move':choose(g['fen'],g['legal_moves'])})
 print('done',g.get('wins'),g.get('draws'),g.get('losses'))
-# revision 2: deterministic capture-first legal move policy.
+# deterministic capture-first legal move policy, revision 3
